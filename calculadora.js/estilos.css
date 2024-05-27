@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(45deg,rgb(24, 39, 76),rgb(197, 197, 241));
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    position: relative;
+    font-family: "Poppins", sans-serif;
+}
+.calculadora{
+    background: linear-gradient(
+        0deg,
+        rgb(35, 36, 60),
+        rgb(17, 17, 36)
+    );
+    width: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    flex-direction: column;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgb(17, 17, 36),
+    0 0 45px rgb(17, 17, 36),
+    0 0 3px rgb(193, 201, 230);
+}
+
+
+.calculadora h1{
+    color:aliceblue;
+    font-size: 30px;
+    margin-block: 15px;
+}
+
+
+.botao{
+    background-color: rgb(238, 245, 255);
+    width: 70px;
+    height: 60px;
+    font-size: 25px;
+    cursor: pointer;
+    border: 0cqb;
+    margin: 3px;
+    border-radius: 15px;
+    
+}
+.botao:hover{
+    background-color: transparent;
+    box-shadow: 0px 0px 9px  rgb(60, 60, 82),
+    0px 0px 6px rgb(115, 115, 187),
+    0px 0px 3px rgb(193, 201, 230);
+    color: rgb(238, 245, 255);
+}
+
+#resultado{
+    width: 300px;
+    background-color: white;
+    margin: 10px;
+    height: 40px;
+    font-size: 30px;
+    border-radius: 5px;
+    text-align: right;
+    padding: 3px;
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+}
+
+#temas{
+    position: absolute;
+    top: 20px;
+    right: 5px;
+    z-index: 1;
+    width: 100px;
+    color: black;
+    border: 1px solid transparent;
+    outline: none;
+    border-radius: 5px;
+    height: 25px;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+body.ambar {
+    background: linear-gradient(0, rgb(167, 146, 119), rgb(209, 187, 158));
+}
+body.azul {
+    background-image: linear-gradient(45deg,rgb(24, 39, 76),rgb(197, 197, 241));
+}
+body.rosa {
+    background: linear-gradient(45deg, rgb(141, 78, 128), rgb(253, 204, 242));
+}
+body.escuro {
+    background: linear-gradient(45deg, rgb(18, 2, 14), rgb(29, 2, 23));
+}
+body.claro {
+    background: linear-gradient(45deg, #D0CFCF, #FFFBFE);
+}
+
+.calculadora.escuro{
+    background: linear-gradient(
+        0deg,
+        rgb(0, 0, 0),
+        rgb(20, 15, 31)
+    );
+    box-shadow: 0 0 10px rgb(17, 17, 36),
+    0 0 45px rgb(23, 23, 44),
+    0 0 3px rgb(42, 44, 50);
+}
+.calculadora.claro{
+    background: linear-gradient(
+        0deg,
+        #565254,
+        #FFFBFE
+    );
+    box-shadow: 0 0 10px #FFFBFE,
+    0 0 45px #FFFBFE,
+    0 0 3px #565254;
+}
+.calculadora.azul{
+    background: linear-gradient(
+        0deg,
+        rgb(35, 36, 60),
+        rgb(17, 17, 36)
+    );
+    box-shadow: 0 0 10px rgb(17, 17, 36),
+    0 0 45px rgb(17, 17, 36),
+    0 0 3px rgb(193, 201, 230);
+}
+.calculadora.ambar{
+    background: linear-gradient(
+        0deg,
+        rgb(234, 216, 192),
+        rgb(255, 242, 225)
+    );
+    box-shadow: 0 0 10px rgb(111, 78, 55),
+    0 0 45px rgb(111, 78, 55),
+    0 0 3px rgb(76, 53, 36);
+}
+.calculadora.rosa{
+    background: linear-gradient(
+        0deg,
+        rgb(50, 35, 60),
+        rgb(57, 36, 103)
+    );
+    box-shadow: 0 0 10px rgb(93, 53, 135),
+    0 0 45px rgb(93, 53, 135),
+    0 0 3px rgb(230, 193, 228);
+}
+
+body.ambar .botao {
+    background-color: rgb(76, 53, 36);
+    color: white;
+    box-shadow: 0 0 2px rgb(111, 78, 55),
+    0 0 9px rgb(111, 78, 55),
+    0 0 3px rgb(76, 53, 36);
+}
+body.ambar h1{
+    color: rgb(76, 53, 36);
+}
+body.ambar .botao:hover {
+    background-color: transparent;
+    color: rgb(76, 53, 36);
+    box-shadow: 0px 0px 9px rgb(111, 78, 55),
+    0px 0px 6px rgb(111, 78, 55),
+    0px 0px 3px rgb(76, 53, 36);
+}
+
+body.claro h1{
+    color: #FFFBFE;
+}
+body.claro .botao:hover{
+    box-shadow: 0px 0px 9px #FFFBFE, 
+    0px 0px 6px #FFFBFE,
+     0px 0px 3px #565254;
+}
